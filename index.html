@@ -11,7 +11,77 @@
 </head>
 
 <body>
+  <header class="shadow-sm p-1">
+    <h1 class="text-center fs-2 fw-bold">Exchanges rate</h1>
+  </header>
+  <main class="py-5">
+    <div class="container">
+      <div class="row gx-4">
+        <div class="col-md-8">
+          <div class="px-3 py-4 shadow">
+            <h2 class="fs-4 mb-3">Convert</h2>
+            <form action="#">
+              <div class="row mb-3">
+                <div class="col">
+                  <select class="form-select" name="currency-1" id="currency-1" aria-label="Choose the 1st currency">
+                    <option value="0">Choose a currency...</option>
+                  </select>
+                </div>
+                <div class="col-auto"></div>
+                <div class="col">
+                  <select class="form-select" name="currency-1" id="currency-2" aria-label="Choose the 2nd currency">
+                    <option value="0">Choose a currency...</option>
+                  </select>
+                </div>
+              </div>
 
+              <div class="row align-items-center">
+                <div class="col">
+                  <input class="form-control" type="text" inputmode="numeric" name="amount-1" id="amount-1"
+                    aria-label="Amount" placeholder="Amount...">
+                </div>
+                <div class="col-auto">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                </div>
+                <div class="col">
+                  <input class="form-control" type="text" inputmode="numeric" name="amount-2" id="amount-2"
+                    aria-label="Amount" placeholder="Amount...">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="px-3 py-4 shadow">
+            <h2 class="fs-4 mb-3">Historical rates</h2>
+            <table class="table table-hover">
+              <caption><span class="main-currency">EUR</span>/<span class="secondary-currency">USD</span> rates for the
+                last 30 days</caption>
+              <thead>
+                <tr class="table-primary">
+                  <th scope="col">Date</th>
+                  <th scope="col"><span class="main-currency">EUR</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="rates-date" scope="row">...</th>
+                  <td class="rate">333.55</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="src/index.js"></script>
 </body>
 
