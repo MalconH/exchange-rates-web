@@ -23,13 +23,15 @@
             <form action="#">
               <div class="row mb-3">
                 <div class="col">
-                  <select class="form-select" name="currency-1" id="currency-1" aria-label="Choose the 1st currency">
+                  <select class="form-select" name="currency-1" id="currency-1" data-currency-order="first"
+                    aria-label="Choose the 1st currency">
                     <option value="0">Choose a currency...</option>
                   </select>
                 </div>
                 <div class="col-auto"></div>
                 <div class="col">
-                  <select class="form-select" name="currency-2" id="currency-2" aria-label="Choose the 2nd currency">
+                  <select class="form-select" name="currency-2" id="currency-2" data-currency-order="second"
+                    aria-label="Choose the 2nd currency">
                     <option value="0">Choose a currency...</option>
                   </select>
                 </div>
@@ -38,7 +40,7 @@
               <div class="row align-items-center">
                 <div class="col">
                   <input class="form-control" type="text" inputmode="numeric" name="amount-1" id="amount-1"
-                    aria-label="Amount" placeholder="Amount...">
+                    aria-label="Amount" placeholder="Amount..." autocomplete="off">
                 </div>
                 <div class="col-auto">
                   <button type="button" class="btn btn-secondary">
@@ -47,7 +49,7 @@
                 </div>
                 <div class="col">
                   <input class="form-control" type="text" inputmode="numeric" name="amount-2" id="amount-2"
-                    aria-label="Amount" placeholder="Amount...">
+                    aria-label="Amount" placeholder="Amount..." autocomplete="off">
                 </div>
               </div>
             </form>
