@@ -27,6 +27,7 @@
                     aria-label="Choose the 1st currency">
                     <option value="0">Choose a currency...</option>
                   </select>
+                  <span id="error-currency-1" class="invalid-feedback"></span>
                 </div>
                 <div class="col-auto"></div>
                 <div class="col">
@@ -34,6 +35,7 @@
                     aria-label="Choose the 2nd currency">
                     <option value="0">Choose a currency...</option>
                   </select>
+                  <span id="error-currency-2" class="invalid-feedback"></span>
                 </div>
               </div>
 
@@ -41,6 +43,7 @@
                 <div class="col">
                   <input class="form-control" type="text" inputmode="numeric" name="amount-1" id="amount-1"
                     aria-label="Amount" placeholder="Amount..." autocomplete="off">
+                  <span id="error-amount-1" class="invalid-feedback"></span>
                 </div>
                 <div class="col-auto">
                   <button type="button" class="btn btn-secondary">
@@ -50,6 +53,7 @@
                 <div class="col">
                   <input class="form-control" type="text" inputmode="numeric" name="amount-2" id="amount-2"
                     aria-label="Amount" placeholder="Amount..." autocomplete="off">
+                  <span id="error-amount-2" class="invalid-feedback"></span>
                 </div>
               </div>
             </form>
@@ -84,6 +88,7 @@
   <footer></footer>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="src/validations.js"></script>
   <script src="src/index.js"></script>
 </body>
 
