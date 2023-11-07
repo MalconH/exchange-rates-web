@@ -100,7 +100,7 @@ function getConvertedAmount(input, onReverseMode = false) {
 
 function generateRows(fromCurrency, toCurrency) {
     const NUMBER_OF_DAYS = 30;
-    const startDate = formatDate(substractDaysFromDate(new Date(), NUMBER_OF_DAYS)); // Format: YYYY-MM-DD
+    const startDate = dateToString(substractDaysFromDate(new Date(), NUMBER_OF_DAYS)); // Format: YYYY-MM-DD
 
     document.querySelectorAll(".table tr").forEach((row => {
         row.remove();
@@ -112,7 +112,7 @@ function generateRows(fromCurrency, toCurrency) {
                 .forEach(historicalRate => {
                     const date = historicalRate;
                     const rate = historicalRates[date][toCurrency];
-                    generateRow(date, rate);
+                    generateRow(formatDate(date), rate);
                 });
         });
 
@@ -186,7 +186,13 @@ function substractDaysFromDate(date, days) {
     return newDate;
 }
 
-function formatDate(date) { // Formats to: YYYY-MM-DD   
+function formatDate(YYYY_MM_DD) { // from YYYY-MM-DD to DD-MM-YYYY
+    const [year, month, day] = YYYY_MM_DD.split("-");
+
+    return `${day}-${month}-${year}`;
+}
+
+function dateToString(date) { // Takes a Date Object and return a String: DD-MM-YYYY   
     const jsonDate = date.toJSON(); // toJSON() -> YYYY-MM-DDThh:mm:ss.000Z
     return jsonDate.slice(0, jsonDate.indexOf("T")); // Exclude everything after "T"
 }
