@@ -38,7 +38,7 @@ function onCurrencySelected(event) {
     }
 
     $firstAmountInput.value = "";
-    $firstAmountInput.value = "";
+    $secondAmountInput.value = "";
 }
 
 function onAmountEntered(event) {
