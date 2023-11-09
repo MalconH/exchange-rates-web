@@ -161,7 +161,7 @@ function removeErrors() {
         element.classList.remove("is-invalid");
     });
 
-    document.querySelectorAll("invalid-feedback").forEach(element => {
+    document.querySelectorAll(".invalid-feedback").forEach(element => {
         element.textContent = "";
     });
 }
