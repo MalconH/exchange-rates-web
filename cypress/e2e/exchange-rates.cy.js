@@ -304,7 +304,7 @@ context("Testing exchange rates web app", () => {
             cy.get("#currency-2").select(CURRENCY);
 
             cy.get("#currency-2").should("have.class", "is-invalid");
-            cy.get("#error-currency-2").should("Currencies cannot be the same");
+            cy.get("#error-currency-2").should("have.text", "Currencies cannot be the same");
         });
     });
 });
