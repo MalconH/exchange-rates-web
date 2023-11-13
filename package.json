@@ -1,0 +1,27 @@
+{
+  "name": "exchange-rates-web",
+  "version": "1.0.0",
+  "description": "Exchange rates project created for r-argentina-programa course. It shows exchanges rates for a specefic currency and date",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MalconH/exchange-rates-web.git"
+  },
+  "author": "MalconH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MalconH/exchange-rates-web/issues"
+  },
+  "homepage": "https://github.com/MalconH/exchange-rates-web#readme",
+  "devDependencies": {
+    "cypress": "^13.3.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1"
+  }
+}

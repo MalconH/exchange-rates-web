@@ -1,0 +1,14 @@
+table {
+  caption-side: top;
+}
+
+tbody {
+  display: block;
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+tr {
+  width: 100%;
+  display: table;
+}
