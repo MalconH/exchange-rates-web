@@ -102,7 +102,7 @@ function generateRows(fromCurrency, toCurrency) {
     const NUMBER_OF_DAYS = 30;
     const startDate = dateToString(substractDaysFromDate(new Date(), NUMBER_OF_DAYS)); // Format: YYYY-MM-DD
 
-    document.querySelectorAll(".table tr").forEach((row => {
+    document.querySelectorAll(".table tbody tr").forEach((row => {
         row.remove();
     }));
 
